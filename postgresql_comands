@@ -1,0 +1,23 @@
+POSTGRESQL commands
+
+In Psql:
+
+\list or \l -> to list databases
+
+\dt -> to list tables in the current database
+
+CREATE DATABASE nombre; -> para crear las bases de datos, es importante el “;” al final
+
+Create user nombre with password ‘tatan’; -> para crear un Nuevo usuario
+
+Alter role nombre superuser; -> para convertir un usuario en superusuario de la base de datos, "nosuperuser" para lo contrario
+
+\connect nombre_db -> para conectarse a la base de datos "nombre_db"
+
+psql -d mydb -U myuser -> para logearse con un determinado usuario en una base de datos
+psql -d mydb -U myuser -W -> para logearse con un determinado usuario en una base de datos y preguntar por contraseña
+psql -h myhost -d mydb -U myuser -W -> para logearse con un determinado usuario en una base de datos en 
+                                        un determinado host y preguntar por contraseña
+DROP TABLE nombre_de_la_tabla; -> para eliminar tablas
+ 
+\q -> para salir de psql
