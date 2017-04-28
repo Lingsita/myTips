@@ -26,3 +26,6 @@ DROP TABLE nombre_de_la_tabla; -> para eliminar tablas
 psql postgres -> login with postgres user
 drop database database_name -> Borrar base de datos
 psql nombre_db < archivo -> insertar info en base de datos desde dump 
+
+#connect with postgres
+sudo -u postgres psql postgres
