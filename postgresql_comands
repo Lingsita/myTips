@@ -29,3 +29,6 @@ psql nombre_db < archivo -> insertar info en base de datos desde dump
 
 #connect with postgres
 sudo -u postgres psql postgres
+
+#grant access 
+psql dbname -c "GRANT ALL ON ALL FUNCTIONS IN SCHEMA public to postgres;"
